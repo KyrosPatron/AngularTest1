@@ -6,16 +6,16 @@
 <div>
   <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
     <label for="firstName">First Name: </label>
-    <input id="firstName" type="text" formControlName="firstName">
+    <input id="firstName" type="text" formControlName="firstName" required>
 
     <label for="lastName">Last Name: </label>
-    <input id="lastName" type="text" formControlName="lastName">
+    <input id="lastName" type="text" formControlName="lastName" required>
     <br>
     <label for="email">Email: </label>
-    <input id="email" type="text" formControlName="email">
+    <input id="email" type="text" formControlName="email" required>
 
     <label for="phone">Phone: </label>
-    <input id="phone" type="text" formControlName="phone">
+    <input id="phone" type="text" formControlName="phone" required>
     <br>
     <button type="submit"> Send Form</button>
   </form>
